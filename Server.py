@@ -78,9 +78,7 @@ def submit_feedback():
 
 
 
-@myweb.route("/Feedback")
-def neww():
-    return render_template('Feedback.html')
+
 
 
 
