@@ -78,9 +78,7 @@ def submit_feedback():
 
 
 
-@myweb.route("/Feedback")
-def newsquare():
-    return render_template('Feedback.html')
+
 
 
 
