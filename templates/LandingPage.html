@@ -122,82 +122,95 @@
 
 
 }
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .home {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    background: url();
-    background-color:skyblue;
-    background-size:150vh;
-    display: flex;
-    align-items: center;
-    padding: 30px 100px;
-    margin-top:-19px;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url('your-image-url.jpg'); /* Add your image URL */
+  background-color: skyblue;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 5% 10%;
+  box-sizing: border-box;
+  margin-top: -19px;
 }
+
 .content {
-    max-width: 500px;
-    color: #555;
-    margin-top:-300px;
+  max-width: 100%;
+  color: #555;
+  text-align: center;
 }
+
 .content h2 {
-    font-size: 3em;
+  font-size: 3em;
 }
+
 .content h2 span {
-    color: #7d2ae8;
+  color: #7d2ae8;
 }
-.content h4 {
-    font-size: 2em;
-}
+
 .content p {
-    padding: 10px 0 40px 0;
+  padding: 10px 0 20px 0;
 }
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .btn-group a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 40px;
-    background: #7d2ae8;
-    border-radius: 10px;
-    border: 2px solid #7d2ae8;
-    font-weight: 500;
-    transition: .3s;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: #7d2ae8;
+  border-radius: 10px;
+  border: 2px solid #7d2ae8;
+  font-weight: 500;
+  transition: .3s;
 }
-.btn-group a:hover:nth-child(1) {
-    color: #7d2ae8;
-    background: transparent;
+
+.btn-group a:hover {
+  color: #7d2ae8;
+  background: transparent;
 }
-.btn-group a:nth-child(2) {
-    color: #7d2ae8;
-    background: transparent;
-    margin-left: 30px;
-    padding: 10px 30px;
-}
-.btn-group a:hover:nth-child(2) {
-    color: #fff;
-    background: #7d2ae8;
-}
+
 .social-icons {
-    position: absolute;
-    bottom: 50px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 .social-icons a {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: #7d2ae8;
-    border-radius: 50%;
-    margin-right: 22px;
-    text-align: center;
-    line-height: 45px;
-    border: 1px solid #fff;
-    outline: 2px solid #7d2ae8;
-    transition: .3s;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: #7d2ae8;
+  border-radius: 50%;
+  margin-right: 22px;
+  text-align: center;
+  line-height: 45px;
+  border: 1px solid #fff;
+  outline: 2px solid #7d2ae8;
+  transition: .3s;
 }
+
 .social-icons a:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
+
 .social-icons a i {
-    color: #fff;
+  color: #fff;
 }
+
 body {
   padding-top: 80px; /* Adjust the value based on your navbar height */
 }
@@ -217,7 +230,7 @@ body {
 
 <!--About me code STARTS HERE-->
 <div class="bg">
-    <body bgcolor="">
+
  <section id="about-section">
             <!-- about left  -->
             <div class="about-left">
@@ -283,7 +296,7 @@ LPT School, Kakinada, Andhra Pradesh.
                  <h1>
                    Mre about Education
                  </h1>
-                  <h3 class="max"> To learn more about your education and qualifications, click on the arrow.</h3>
+                  <h3 class="max"> To Know more about your education and qualifications, click on the arrow.</h3>
                    <br><br>
                   <center> <a href="MoreAbout"><i class="fas fa-arrow-circle-right fa-7x"></i></a></center>
 
@@ -299,31 +312,38 @@ LPT School, Kakinada, Andhra Pradesh.
                 font-family: poppins;
             }
             #about-section {
-                width: 100%;
-                height: auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 80px 12%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8%; /* Adjusted padding */
+}
+            .bg {
+    background-color: lightgray;
+    margin-top: 2px;
+}
 
-            }
-            .bg
-            {
-            background-color:lightgray;
-            margin-top:2px;
-            }
-            .about-left img{
-                width: 490px;
-                height: auto;
-                padding:5px;
-                border-radius:25px;
-                border:skyblue;
-                transform: translateY(50px);
-            }
-            .about-right {
-                width: 54%;
-                margin-top:10px;
-            }
+#about-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 12%; /* Adjusted padding */
+}
+
+.about-left img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 25px;
+    margin-right: 20px; /* Adjusted margin */
+}
+
+.about-right {
+    width: 90%; /* Adjusted width */
+    margin-top: 10px;
+}
 
             .about-right ul li {
                 display: flex;
@@ -383,32 +403,8 @@ LPT School, Kakinada, Andhra Pradesh.
               <!--navbar css starts-->
 
         </style>
-</div><br><br><br>
-<!--About me code ENDS here-->
-
-
-
-
-
-
-
-
-
-<!--SKILLS AND ACHIEVEMENT CODE STARTS HERE-->
-<div>
-    <section>
-
-    </section>
 </div>
-
-
-
-
-
-
-
-
-
+<!--About me code ENDS here-->
 
 
 
@@ -460,11 +456,18 @@ html, body {
 .container {
     background: $container-color;
     width: 100%;
-    height: 800px;
+    height: 1000px;
     margin: 2% auto; /* Adjust the top margin to reduce space */
     box-shadow: 0px 0px 10px #C8C7D9;
     position: relative;
 
+}
+@media screen and (max-width: 768px) {
+    .map,
+    .contact-form {
+        width: 100%; /* Make both sections full width for smaller screens */
+        float: none; /* Clear the float for smaller screens */
+    }
 }
 
 .map {
@@ -474,12 +477,12 @@ html, body {
 .hh
 {
 background-color:#c8e7d8;
-margin-top:230px;
+margin-top:-34px;
 }
 
 .contact-form {
   width: 45%;
-  margin-left: 2%;
+   margin-left: 0;
   float: left;
 }
 
@@ -499,7 +502,7 @@ margin-top:230px;
 
 .contact-form input,
 .contact-form textarea {
-  width: 330px;
+  width: 100%;
   padding: 3%;
   margin: 2% 8%;
   color: $text-color;
@@ -584,20 +587,18 @@ margin-top:230px;
         </div></div>
 </section><br>
 <style>
-    body {
-            margin: 0 auto;
-            background-color: skyplue;
-        }
 
-        div.formContainer {
-            margin: 4em auto 4em auto;
-            width: 80%;
-            height:70vh;
-            color: #FCE205;
-            border: 2px solid red;
-            border-radius: 2px;
-            margin-top:;
-        }
+
+       div.formContainer {
+    margin: 4em auto 4em auto;
+    width: 80%;
+    height: 70vh;
+    color: #FCE205;
+    border: 2px solid red;
+    border-radius: 2px;
+    /* margin-top:; */ /* Remove this line or set a value like margin-top: 0; */
+}
+
 
         div.heading {
             margin: 0 auto 0 auto;
@@ -659,17 +660,18 @@ margin-top:230px;
         }
 
         div.form textarea {
-            display: block;
-            width: 80%;
-            margin: 1em auto 1em auto;
-            outline: none;
-            color: red;
-            padding: 1.2em 0 1em 1.2em;
-            background-color: white;
-            border: 0.5px solid #FCE205;
-            height: 8em;
-            resize: none;
-        }
+    display: block;
+    width: 80%;
+    margin: 1em auto 1em auto;
+    outline: none;
+    color: red;
+    padding: 1.2em 0 1em 1.2em;
+    background-color: white;
+    border: 0.5px solid #FCE205;
+    height: 8em;
+    resize: none;
+}
+
 
         div.form button {
             outline: none;
