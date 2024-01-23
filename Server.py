@@ -1,5 +1,4 @@
 from flask import Flask,render_template,request
-
 myweb=Flask(__name__)
 
 
@@ -29,6 +28,15 @@ def moreabouteducation():
 @myweb.route("/Skills")
 def Myskills():
     return render_template('Skills.html')
+
+
+
+
+
+
+
+
+
 
 
 
