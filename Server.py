@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request, redirect, url_for
 myweb=Flask(__name__)
 
 
@@ -57,7 +57,7 @@ def sample11():
     return render_template('Contact.html')
 
 
-@myweb.route("/successfull", methods=('GET','POST'))
+@myweb.route("/Contact", methods=('GET','POST'))
 def sample12():
     YourName= request.form.get('name')
     Email  = request.form.get('e-mail')
@@ -66,6 +66,28 @@ def sample12():
     a={"Your Name":YourName,"Your E-mail Address":Email,"Your Phone Number":PhoneNumber,"Your Message":message}
     ContactFormDetails.insert_one(a)
     return render_template('ContactThanku.html')
+
+
+
+
+# @myweb.route('/Contact', methods=['GET', 'POST'])
+# def contact():
+#     if request.method == 'POST':
+#         name = request.form['name']
+#         email = request.form['e-mail']
+#         phone = request.form['phone']
+#         message = request.form['message']
+#
+#         # Store data in MongoDB
+#         ContactFormDetails.insert_one({'name': name, 'email': email, 'phone': phone, 'message': message})
+#
+#         # Redirect to a thank you page or any other page
+#
+#
+#     return render_template('Contact.html')
+
+
+
 
 
 
