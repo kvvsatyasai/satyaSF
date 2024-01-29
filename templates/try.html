@@ -294,7 +294,7 @@ LPT School, Kakinada, Andhra Pradesh.
 
 <div class="education">
                  <h1>
-                   Mre about Education
+                   More about Education
                  </h1>
                   <h3 class="max"> To Know more about your education and qualifications, click on the arrow.</h3>
                    <br><br>
@@ -337,7 +337,7 @@ LPT School, Kakinada, Andhra Pradesh.
     max-width: 60%;
     height: auto;
     border-radius: 25px;
-    margin-right: 20px; /* Adjusted margin */
+    margin-right: 280px; /* Adjusted margin */
 }
 
 .about-right {
@@ -409,6 +409,278 @@ LPT School, Kakinada, Andhra Pradesh.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--skills starts here-->
+<div class="sl">
+    <section>
+        <style>
+    /*Counts padding as part of the width*/
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    /* Custom Properties*/
+
+    :root {
+        --ff-primary: 'Source Sans Pro', sans-serif;
+        --ff-secondary: 'Oswald', monospace;
+
+        --fw-reg: 300;
+        --fw-bold: 900;
+
+        --clr-light: #fff;
+        --clr-dark: #303030;
+        --clr-accent: #235175;
+        --clr-accent-hover: #3c89c3;
+        --clr-subtitle: #ffa64d;
+
+        --fs-h1: 3rem;
+        --fs-h2: 2.25rem;
+        --fs-h3: 1.25rem;
+        --fs-body: 1rem;
+
+        --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+              0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    }
+
+    @media (min-width: 800px) {
+        :root {
+            --fs-h1: 4.5rem;
+            --fs-h2: 3.75rem;
+            --fs-h3: 1.5rem;
+            --fs-body: 1.125rem;
+        }
+    }
+
+    /* General styles */
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--ff-primary);
+      font-size: var(--fs-body);
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 4em 2em;
+    }
+
+     .sl
+     {
+       background-color:gray;
+       margin-top:4px;
+     }
+
+    strong {
+      font-weight: var(--fw-bold);
+    }
+    /* My skills section */
+
+    #my-skills {
+      background-blend-mode: multiply;
+      background-size: cover;
+      color: var(--clr-light);
+      text-align: justify;
+    }
+
+    #my-skills h2 {
+      color: lightgreen;
+      position: relative;
+      text-align: center;
+      font-size: var(--fs-h2);
+    }
+
+    #my-skills h2::after {
+      content: '';
+      display: block;
+      width: 2.5em;
+      height: 1px;
+      margin: 0.5em auto 1em;
+      opacity: 0.25;
+    }
+
+    #skills {
+      margin-bottom: 3em;
+    }
+
+    #skill {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: 800px) {
+      #skills {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #skill + #skill {
+        margin-left: 4em;
+      }
+    }
+#my-skills h3 {
+      color:aqua;
+
+    }
+
+
+           .container
+           {
+           display:flex;
+           justify-content: space-around;
+           overflow: hidden;
+           }
+
+
+
+        .card {
+            background-color: gray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 9px;
+    border-style: solid;
+    border-color: skyblue;
+    transition: transform .2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 500px;
+    height: 8cm;
+
+    overflow: hidden;
+    }
+ .card:hover
+{
+background-color:white;
+transform: scale(1.2);
+}
+
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .category {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+        .lo
+        {
+        color:lightgreen;
+        }
+  </style>
+        <body>
+
+  <!-- My skills section -->
+  <section id="my-skills">
+    <h2>Skills</h2>
+    <div id="skills">
+      <div id="skill">
+        <h3>Front-End Development</h3>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Flask using python</li>
+            <li>Django using python</li>
+          <li>React</li>
+        </ul>
+      </div> <!-- / skill -->
+
+      <div id="skill">
+        <h3>Back-End Development</h3>
+        <ul class="skills-list">
+          <li>MongoDB</li>
+          <li>Sql</li>
+          <li>PostgreSql</li>
+          <li>Django Inbuilt Database</li>
+        </ul>
+      </div> <!-- / skill -->
+
+    </div> <!-- / skills -->
+  </section>
+
+  <center> <h1 class="lo">Speaking and writing skills</h1></center>
+  <div >
+  <section class="container">
+
+        <div class="card">
+    <h2>Speaking Languages</h2>
+    <ul>
+        <li>▶ English : (Advance Knowledge)</li>
+        <li>▶ Telugu : (Advance Knowledge)</li>
+        <li>▶ Hindi : (Advance Knowledge)</li>
+        <li>▶ Odia : (Advance Knowledge)</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>Reading and Writing Languages</h2>
+    <ul>
+        <li>▶ English : (Advance Knowledge)</li>
+        <li>▶ Telugu : (Advance Knowledge)</li>
+        <li>▶ Hindi : (Intermediate Knowledge)</li>
+    </ul>
+</div>
+  </section></div>
+
+</body>
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--ContactMe code STARTS here-->
 <div class="hh">
 <section>
@@ -457,8 +729,6 @@ html, body {
     background: $container-color;
     width: 100%;
     height: 1000px;
-    margin: 2% auto; /* Adjust the top margin to reduce space */
-    box-shadow: 0px 0px 10px #C8C7D9;
     position: relative;
 
 }
@@ -476,8 +746,8 @@ html, body {
 }
 .hh
 {
-background-color:#c8e7d8;
-margin-top:-34px;
+background-color:rgb(230,230,250);
+margin-top:6px;
 }
 
 .contact-form {

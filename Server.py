@@ -30,7 +30,9 @@ def Myskills():
     return render_template('Skills.html')
 
 
-
+@myweb.route("/Achievements")
+def myachive():
+    return render_template('Achievements.html')
 
 
 
