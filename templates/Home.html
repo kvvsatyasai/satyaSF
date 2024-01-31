@@ -881,7 +881,7 @@ li {
     </div>
         <style>
              h1 {
-            color: #3498db;
+            color: lightgreen;
         }
 
         .achievement, .internship {
@@ -890,6 +890,10 @@ li {
             background-color: #ffffff; /* White background color for each achievement block */
             border-radius: 8px; /* Rounded corners for a cleaner look */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+             border-style: solid;
+    border-color: skyblue;
+    transition: transform .2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .certificate-link {
@@ -911,7 +915,7 @@ li {
         }
         .ac
         {
-            background-color:lightgray;
+            background-color:gray;
             margin-top:4px;
         }
         </style>
@@ -952,7 +956,7 @@ li {
 		<h1 class="title">Contact Me</h1>
 		<h2 class="subtitle"></h2>
 
-		<form action="https://formspree.io/f/mwkdgjgv", method="POST">
+		<form action="/Contact", method="POST">
 			<input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="e-mail" placeholder="Your E-mail Address" required>
 <input type="tel" name="phone" placeholder="Your Phone Number" required>
@@ -1083,9 +1087,9 @@ margin-top:4px;
 <center>
 <div class="f">
     <section>
-           <div class="feedback-box">
+        <div class="feedback-box">
         <h2>Feedback</h2>
-        <form action="https://formspree.io/f/mwkdgjgv" method="post">
+        <form action="/Feedback" method="POST">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -1103,8 +1107,10 @@ margin-top:4px;
             </div>
         </form>
     </div>
+        </form>
+    </div>
         <style>
-          .feedback-box {
+            .feedback-box {
             background-color:lightblue;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
             padding: 30px;
@@ -1120,6 +1126,11 @@ margin-top:4px;
 
         .form-group {
             margin-bottom: 20px;
+        }
+        .f
+        {
+          margin-top:4px;
+          background-color:pink;
         }
 
         label {
@@ -1153,11 +1164,6 @@ margin-top:4px;
 
         input[type="submit"]:hover {
             background-color: #27ae60;
-        }
-        .f
-        {
-        margin-top:4px;
-        background-color:#d9b7a5;
         }
         </style>
     </section>

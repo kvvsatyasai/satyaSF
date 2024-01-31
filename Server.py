@@ -101,9 +101,8 @@ def feedback():
 def submit_feedback():
     Name=request.form.get('name')
     EMail=request.form.get('email')
-    Rate=request.form.get('rate')
-    Feedback=request.form.get('feedback')
-    b = {"Name": Name, "E-mail Address": EMail, "Rating": Rate, "Your Message": Feedback}
+    Feedback=request.form.get('message')
+    b = {"Name": Name, "E-mail Address": EMail, "Your Message": Feedback}
     FeedbackFormDetails.insert_one(b)
     return render_template('FeedbackThanku.html')
 

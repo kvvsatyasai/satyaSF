@@ -1306,80 +1306,125 @@
 <!--</body>-->
 <!--</html>-->
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
     <style>
         body {
+            font-family: 'Arial', sans-serif;
+            background-color: lightgray;
             margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
+        .feedback-box {
+            background-color: lightblue;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            border-radius: 12px;
+            width: 400px;
             text-align: center;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
         }
 
-        .footer-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .footer-links a {
-            text-decoration: none;
+        .feedback-box h2 {
             color: #fff;
-            transition: color 0.3s ease;
+            margin-bottom: 20px;
         }
 
-        .footer-links a:hover {
-            color: #cc0000;
+        .form-group {
+            margin-bottom: 20px;
         }
 
-        .contact-info {
-            text-align: right;
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #fff;
+            font-weight: bold;
         }
 
-        .rights-reserved {
-            flex-basis: 100%;
-            margin-top: 10px; /* Added margin for spacing */
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        input[type="submit"] {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #27ae60;
+        }
+
+        .rating-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rating-label {
+            margin-right: 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        select {
+            width: 60px;
         }
     </style>
+    <title>Feedback Form</title>
 </head>
 <body>
-
-    <!-- Your website content goes here -->
-
-    <footer>
-        <div class="footer-links">
-            <h2>Quick Links</h2>
-            <ul>
-                <li><a href="Skills">My Skills</a></li><br>
-                <li><a href="Achievements">Achievements</a></li><br>
-                <li><a href="Feedback">Feedback</a></li><br>
-                <li><a href="Contact">Contact</a></li><br>
-                <li><a href="Hobbies">Hobbies</a></li>
-            </ul>
-        </div>
-        <div class="contact-info">
-            <p>Mobile: +1-123-456-7890</p>
-            <p>Email: yourname@gmail.com</p>
-        </div>
-        <p class="rights-reserved">All Rights Reserved &copy; 2024 Your Name</p>
-    </footer>
-
+    <div class="feedback-box">
+        <h2>Feedback</h2>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <div class="form-group rating-group">
+                <span class="rating-label">Rating:</span>
+                <select id="rating" name="rating" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
 
