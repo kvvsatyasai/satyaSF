@@ -80,8 +80,9 @@
         </style>
         </div>
 </header>
-    <body bgcolor="lightgray">
-        <section id="about-section">
+    <div class="bg">
+
+ <section id="about-section">
             <!-- about left  -->
             <div class="about-left">
                 <img src="/static/images/mypic.jpg" alt="Satya"/>
@@ -144,18 +145,16 @@ LPT School, Kakinada, Andhra Pradesh.
 
 <div class="education">
                  <h1>
-                   Mre about Education
+                   More about Education
                  </h1>
-                  <h3 class="max"> To learn more about my education and qualifications, click on the arrow.</h3>
+                  <h3 class="max"> To Know more about your education and qualifications, click on the arrow.</h3>
                    <br><br>
                   <center> <a href="MoreAbout"><i class="fas fa-arrow-circle-right fa-7x"></i></a></center>
 
               </div>
-        </section>
-    </body>
+ </section></body>
 
-</html>
-        <style>
+<style>
             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
             *{
                 padding: 0;
@@ -164,28 +163,38 @@ LPT School, Kakinada, Andhra Pradesh.
                 font-family: poppins;
             }
             #about-section {
-                width: 100%;
-                height: auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 80px 12%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8%; /* Adjusted padding */
+}
+            .bg {
+    background-color: lightgray;
+    margin-top: 2px;
+}
 
-            }
-            .about-left img{
-                width: 490px;
-                height:86.5%;
-                padding:5px;
-                border-radius:25px;
-                border:skyblue;
-                transform: translateY(50px);
-                position:fixed;
-                margin-top:-630px;
-            }
-            .about-right {
-                width: 54%;
-                margin-top:100px;
-            }
+#about-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%; /* Adjusted padding */
+}
+
+.about-left img {
+    max-width: 50%; /* Adjusted max-width */
+    margin-right: 150px; /* Adjusted margin-right */
+    border-radius: 25px;
+    height: auto;
+}
+
+.about-right {
+    width: 80%; /* Adjusted width */
+    margin-top: 10px;
+}
 
             .about-right ul li {
                 display: flex;
@@ -242,6 +251,20 @@ LPT School, Kakinada, Andhra Pradesh.
                 margin-right: 10px;
                 color: #e74d06;
             }
+            @media (max-width: 768px) {
+    #about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-left img {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .about-right {
+        width: 100%;
+    }
+}
               <!--navbar css starts-->
 
         </style>
+</div>
