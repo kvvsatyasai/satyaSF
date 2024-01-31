@@ -533,361 +533,853 @@
 
 
 
-<div class="sl">
-    <section>
-        <style>
-    /*Counts padding as part of the width*/
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
+<!--<div class="sl">-->
+<!--    <section>-->
+<!--        <style>-->
+<!--    /*Counts padding as part of the width*/-->
+<!--    *,-->
+<!--    *::before,-->
+<!--    *::after {-->
+<!--        box-sizing: border-box;-->
+<!--    }-->
 
-    /* Custom Properties*/
+<!--    /* Custom Properties*/-->
 
-    :root {
-        --ff-primary: 'Source Sans Pro', sans-serif;
-        --ff-secondary: 'Oswald', monospace;
+<!--    :root {-->
+<!--        &#45;&#45;ff-primary: 'Source Sans Pro', sans-serif;-->
+<!--        &#45;&#45;ff-secondary: 'Oswald', monospace;-->
 
-        --fw-reg: 300;
-        --fw-bold: 900;
+<!--        &#45;&#45;fw-reg: 300;-->
+<!--        &#45;&#45;fw-bold: 900;-->
 
-        --clr-light: #fff;
-        --clr-dark: #303030;
-        --clr-accent: #235175;
-        --clr-accent-hover: #3c89c3;
-        --clr-subtitle: #ffa64d;
+<!--        &#45;&#45;clr-light: #fff;-->
+<!--        &#45;&#45;clr-dark: #303030;-->
+<!--        &#45;&#45;clr-accent: #235175;-->
+<!--        &#45;&#45;clr-accent-hover: #3c89c3;-->
+<!--        &#45;&#45;clr-subtitle: #ffa64d;-->
 
-        --fs-h1: 3rem;
-        --fs-h2: 2.25rem;
-        --fs-h3: 1.25rem;
-        --fs-body: 1rem;
+<!--        &#45;&#45;fs-h1: 3rem;-->
+<!--        &#45;&#45;fs-h2: 2.25rem;-->
+<!--        &#45;&#45;fs-h3: 1.25rem;-->
+<!--        &#45;&#45;fs-body: 1rem;-->
 
-        --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-              0.125em 0.125em 0.25em rgba(0,0,0,.15);
-    }
-
-
-
-    /* General styles */
+<!--        &#45;&#45;bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),-->
+<!--              0.125em 0.125em 0.25em rgba(0,0,0,.15);-->
+<!--    }-->
 
 
 
-
-
-    section {
-      padding: 4em 2em;
-    }
-
-     .sl
-     {
-       background-color:gray;
-       margin-top:4px;
-       height:auto;
-     }
-
-    strong {
-      font-weight: var(--fw-bold);
-    }
-    /* My skills section */
-
-    #my-skills {
-      background-blend-mode: multiply;
-      background-size: cover;
-      color: var(--clr-light);
-      text-align: justify;
-    }
-
-    #my-skills h2 {
-      color: lightgreen;
-      position: relative;
-      text-align: center;
-      font-size: var(--fs-h2);
-    }
-
-    #my-skills h2::after {
-      content: '';
-      display: block;
-      width: 2.5em;
-      height: 1px;
-      margin: 0.5em auto 1em;
-      opacity: 0.25;
-    }
-
-    #skills {
-      margin-bottom: 3em;
-    }
-
-    #skill {
-      max-width: 100%;
-      margin: 0 auto;
-    }
-
-    .skills-list {
-      display: flex;
-      flex-direction: column;
-    }
-
-    @media (min-width: 800px) {
-      #skills {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #skill + #skill {
-        margin-left: 4em;
-      }
-    }
-#my-skills h3 {
-      color:aqua;
-       font-size:25px;
-    }
-
-
-         .container {
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
-}
-
-.card {
-    background-color: gray;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 9px;
-    border-style: solid;
-    border-color: skyblue;
-    transition: transform .2s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 1rem;
-    padding: 1.5rem;
-    border-radius: 8px;
-    max-width: 500px; /* Set a fixed width */
-    height: 8cm;
-    overflow: hidden;
-    flex: 1 1 300px; /* Allow boxes to grow or shrink based on available space */
-}
-
-.card:hover {
-    background-color: white;
-    transform: scale(1.2);
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.category {
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-.lo {
-    color: lightgreen;
-    font-size:30px;
-}
-
-/* Adjust the margin for the second set of cards */
-.container:nth-child(2) {
-    margin-top: 20px; /* Adjust this value as needed */
-}
-
-/* Media query to adjust styles for smaller screens */
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column; /* Stack cards vertically on smaller screens */
-        align-items: center; /* Center cards in the container */
-    }
-
-    .card {
-        max-width: 100%; /* Allow cards to take full width on smaller screens */
-    }
-
-    .container:nth-child(2) {
-        margin-top: 0; /* Remove margin between the two sets on smaller screens */
-    }
-}
+<!--    /* General styles */-->
 
 
 
 
-  </style>
-        <body class="bod">
 
-  <!-- My skills section -->
-  <section id="my-skills">
-    <h2>Skills</h2>
-    <div id="skills">
-      <div id="skill">
-        <h3>Front-End Development</h3>
-        <ul class="skills-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Flask using python</li>
-            <li>Django using python</li>
-          <li>React</li>
-        </ul>
-      </div> <!-- / skill -->
+<!--    section {-->
+<!--      padding: 4em 2em;-->
+<!--    }-->
 
-      <div id="skill">
-        <h3>Back-End Development</h3>
-        <ul class="skills-list">
-          <li>MongoDB</li>
-          <li>Sql</li>
-          <li>PostgreSql</li>
-          <li>Django Inbuilt Database</li>
-        </ul>
-      </div> <!-- / skill -->
+<!--     .sl-->
+<!--     {-->
+<!--       background-color:gray;-->
+<!--       margin-top:4px;-->
+<!--       height:auto;-->
+<!--     }-->
 
-    </div> <!-- / skills -->
-  </section>
+<!--    strong {-->
+<!--      font-weight: var(&#45;&#45;fw-bold);-->
+<!--    }-->
+<!--    /* My skills section */-->
+
+<!--    #my-skills {-->
+<!--      background-blend-mode: multiply;-->
+<!--      background-size: cover;-->
+<!--      color: var(&#45;&#45;clr-light);-->
+<!--      text-align: justify;-->
+<!--    }-->
+
+<!--    #my-skills h2 {-->
+<!--      color: lightgreen;-->
+<!--      position: relative;-->
+<!--      text-align: center;-->
+<!--      font-size: var(&#45;&#45;fs-h2);-->
+<!--    }-->
+
+<!--    #my-skills h2::after {-->
+<!--      content: '';-->
+<!--      display: block;-->
+<!--      width: 2.5em;-->
+<!--      height: 1px;-->
+<!--      margin: 0.5em auto 1em;-->
+<!--      opacity: 0.25;-->
+<!--    }-->
+
+<!--    #skills {-->
+<!--      margin-bottom: 3em;-->
+<!--    }-->
+
+<!--    #skill {-->
+<!--      max-width: 100%;-->
+<!--      margin: 0 auto;-->
+<!--    }-->
+
+<!--    .skills-list {-->
+<!--      display: flex;-->
+<!--      flex-direction: column;-->
+<!--    }-->
+
+<!--    @media (min-width: 800px) {-->
+<!--      #skills {-->
+<!--        display: flex;-->
+<!--        max-width: 1000px;-->
+<!--        margin-left: auto;-->
+<!--        margin-right: auto;-->
+<!--      }-->
+
+<!--      #skill + #skill {-->
+<!--        margin-left: 4em;-->
+<!--      }-->
+<!--    }-->
+<!--#my-skills h3 {-->
+<!--      color:aqua;-->
+<!--       font-size:25px;-->
+<!--    }-->
+
+
+<!--         .container {-->
+<!--    display: flex;-->
+<!--    justify-content: space-around;-->
+<!--    overflow: hidden;-->
+<!--    flex-wrap: wrap; /* Allow flex items to wrap to the next line */-->
+<!--}-->
+
+<!--.card {-->
+<!--    background-color: gray;-->
+<!--    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);-->
+<!--    padding: 20px;-->
+<!--    border-radius: 9px;-->
+<!--    border-style: solid;-->
+<!--    border-color: skyblue;-->
+<!--    transition: transform .2s;-->
+<!--    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);-->
+<!--    margin: 1rem;-->
+<!--    padding: 1.5rem;-->
+<!--    border-radius: 8px;-->
+<!--    max-width: 500px; /* Set a fixed width */-->
+<!--    height: 8cm;-->
+<!--    overflow: hidden;-->
+<!--    flex: 1 1 300px; /* Allow boxes to grow or shrink based on available space */-->
+<!--}-->
+
+<!--.card:hover {-->
+<!--    background-color: white;-->
+<!--    transform: scale(1.2);-->
+<!--}-->
+
+<!--h2 {-->
+<!--    color: #333;-->
+<!--    margin-bottom: 15px;-->
+<!--}-->
+
+<!--.category {-->
+<!--    font-weight: bold;-->
+<!--    margin-bottom: 8px;-->
+<!--}-->
+
+<!--ul {-->
+<!--    list-style: none;-->
+<!--    padding: 0;-->
+<!--}-->
+
+<!--li {-->
+<!--    margin-bottom: 8px;-->
+<!--}-->
+
+<!--.lo {-->
+<!--    color: lightgreen;-->
+<!--    font-size:30px;-->
+<!--}-->
+
+<!--/* Adjust the margin for the second set of cards */-->
+<!--.container:nth-child(2) {-->
+<!--    margin-top: 20px; /* Adjust this value as needed */-->
+<!--}-->
+
+<!--/* Media query to adjust styles for smaller screens */-->
+<!--@media (max-width: 600px) {-->
+<!--    .container {-->
+<!--        flex-direction: column; /* Stack cards vertically on smaller screens */-->
+<!--        align-items: center; /* Center cards in the container */-->
+<!--    }-->
+
+<!--    .card {-->
+<!--        max-width: 100%; /* Allow cards to take full width on smaller screens */-->
+<!--    }-->
+
+<!--    .container:nth-child(2) {-->
+<!--        margin-top: 0; /* Remove margin between the two sets on smaller screens */-->
+<!--    }-->
+<!--}-->
 
 
 
 
-<!-- Additional set of four cards -->
-  <center>
-      <h1 class="lo">Speaking Language Skills</h1>
-  </center>
-<div class="container">
-    <section class="container">
-        <div class="card">
-            <h2>Speaking Languages</h2>
-        <ul >
-          <li>&#9654; English :<a class="bb">(Advance Knowledge)</a></li>
-          <li>&#9654; Telugu :<a class="bb">(Advance Knowledge)</a><li>
-          <li>&#9654; Hindi : <a class="bb">(Advance Knowledge)</a></li>
-          <li>&#9654; Odia :<a class="bb">(Advance Knowledge)</a></li>
-        </ul>
+<!--  </style>-->
+<!--        <body class="bod">-->
+
+<!--  &lt;!&ndash; My skills section &ndash;&gt;-->
+<!--  <section id="my-skills">-->
+<!--    <h2>Skills</h2>-->
+<!--    <div id="skills">-->
+<!--      <div id="skill">-->
+<!--        <h3>Front-End Development</h3>-->
+<!--        <ul class="skills-list">-->
+<!--          <li>HTML</li>-->
+<!--          <li>CSS</li>-->
+<!--          <li>Flask using python</li>-->
+<!--            <li>Django using python</li>-->
+<!--          <li>React</li>-->
+<!--        </ul>-->
+<!--      </div> &lt;!&ndash; / skill &ndash;&gt;-->
+
+<!--      <div id="skill">-->
+<!--        <h3>Back-End Development</h3>-->
+<!--        <ul class="skills-list">-->
+<!--          <li>MongoDB</li>-->
+<!--          <li>Sql</li>-->
+<!--          <li>PostgreSql</li>-->
+<!--          <li>Django Inbuilt Database</li>-->
+<!--        </ul>-->
+<!--      </div> &lt;!&ndash; / skill &ndash;&gt;-->
+
+<!--    </div> &lt;!&ndash; / skills &ndash;&gt;-->
+<!--  </section>-->
+
+
+
+
+<!--&lt;!&ndash; Additional set of four cards &ndash;&gt;-->
+<!--  <center>-->
+<!--      <h1 class="lo">Speaking Language Skills</h1>-->
+<!--  </center>-->
+<!--<div class="container">-->
+<!--    <section class="container">-->
+<!--        <div class="card">-->
+<!--            <h2>Speaking Languages</h2>-->
+<!--        <ul >-->
+<!--          <li>&#9654; English :<a class="bb">(Advance Knowledge)</a></li>-->
+<!--          <li>&#9654; Telugu :<a class="bb">(Advance Knowledge)</a><li>-->
+<!--          <li>&#9654; Hindi : <a class="bb">(Advance Knowledge)</a></li>-->
+<!--          <li>&#9654; Odia :<a class="bb">(Advance Knowledge)</a></li>-->
+<!--        </ul>-->
+<!--        </div>-->
+
+<!--        <div class="card">-->
+<!--           <h2>Reading and Writing Languages</h2>-->
+<!--        <ul>-->
+<!--          <li>&#9654; English :<a class="bb">(Advance Knowledge)</a></li>-->
+<!--          <li>&#9654; Telugu :<a class="bb">(Advance Knowledge)</a></li>-->
+<!--          <li>&#9654; Hindi :<a class="bb">(Intermediate Knowledge)</a></li>-->
+<!--        </ul>-->
+<!--        </div>-->
+
+
+
+<!--        <section class="container">-->
+<!--            <center>-->
+<!--                <h1 class="lo">Office Suite Skills</h1>-->
+<!--            </center>-->
+<!--            <section class="container">-->
+<!--        <div class="card">-->
+<!--             <h2>Microsoft Word Skills</h2>-->
+<!--        <ul>-->
+<!--          <li>&#9654; Document creation and formatting </li>-->
+<!--          <li>&#9654; Editing and proofreading </li>-->
+<!--          <li>&#9654; Working with styles and templates</li>-->
+<!--          <li>&#9654; Collaboration features (track changes, comments)</li>-->
+<!--        </ul>-->
+<!--        </div>-->
+
+<!--        <div class="card">-->
+<!--           <h2>Microsoft PowerPoint Skills</h2>-->
+<!--        <ul>-->
+<!--            <li>&#9654; Presentation creation and design</li>-->
+<!--          <li>&#9654; Slide layout and formatting </li>-->
+<!--          <li>&#9654; Animation and transition effects</li>-->
+<!--          <li>&#9654; Use of multimedia elements (images, videos) </li>-->
+<!--            <li>&#9654; Collaboration features for group presentations </li>-->
+<!--        </ul>-->
+<!--        </div>-->
+<!--     <div class="card">-->
+<!--            <h2>Microsoft Excel Skills</h2>-->
+<!--        <ul>-->
+<!--          <li>Data entry and manipulation </li>-->
+<!--          <li>Formulas and functions <li>-->
+<!--          <li>Pivot tables and charts </li>-->
+<!--          <li>Data analysis and visualization</li>-->
+<!--            <li>Macros and automation (VBA)</li>-->
+<!--        </ul>-->
+<!--        </div>-->
+
+<!--        <div class="card">-->
+<!--            <h2>Overall Office Suite Skills</h2>-->
+<!--        <ul>-->
+<!--          <li>Familiarity with the overall Microsoft Office environment </a></li>-->
+<!--          <li>Integration between different Office applications </a></li>-->
+<!--          <li>File management and organization </li>-->
+<!--            <li>Collaboration and sharing features (OneDrive, SharePoint)</li>-->
+<!--        </ul>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--        </section>-->
+
+<!--        <section class="container">-->
+<!--            <center>-->
+<!--                <h1 class="lo">Office Suite Skills</h1>-->
+<!--            </center>-->
+<!--            <section class="container">-->
+<!--        <div class="card">-->
+<!--             <h2>Microsoft Word Skills</h2>-->
+<!--        <ul>-->
+<!--          <li>&#9654; Document creation and formatting </li>-->
+<!--          <li>&#9654; Editing and proofreading </li>-->
+<!--          <li>&#9654; Working with styles and templates</li>-->
+<!--          <li>&#9654; Collaboration features (track changes, comments)</li>-->
+<!--        </ul>-->
+<!--        </div>-->
+
+<!--        <div class="card">-->
+<!--           <h2>Microsoft PowerPoint Skills</h2>-->
+<!--        <ul>-->
+<!--            <li>&#9654; Presentation creation and design</li>-->
+<!--          <li>&#9654; Slide layout and formatting </li>-->
+<!--          <li>&#9654; Animation and transition effects</li>-->
+<!--          <li>&#9654; Use of multimedia elements (images, videos) </li>-->
+<!--            <li>&#9654; Collaboration features for group presentations </li>-->
+<!--        </ul>-->
+<!--        </div>-->
+<!--     <div class="card">-->
+<!--            <h2>Microsoft Excel Skills</h2>-->
+<!--        <ul>-->
+<!--          <li>Data entry and manipulation </li>-->
+<!--          <li>Formulas and functions <li>-->
+<!--          <li>Pivot tables and charts </li>-->
+<!--          <li>Data analysis and visualization</li>-->
+<!--            <li>Macros and automation (VBA)</li>-->
+<!--        </ul>-->
+<!--        </div>-->
+
+<!--        <div class="card">-->
+<!--            <h2>Overall Office Suite Skills</h2>-->
+<!--        <ul>-->
+<!--          <li>Familiarity with the overall Microsoft Office environment </a></li>-->
+<!--          <li>Integration between different Office applications </a></li>-->
+<!--          <li>File management and organization </li>-->
+<!--            <li>Collaboration and sharing features (OneDrive, SharePoint)</li>-->
+<!--        </ul>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--        </section>-->
+
+
+
+
+
+<!--    </section>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--    </section>-->
+<!--</div>-->
+
+
+
+
+<!--<div id="feedback-main">-->
+<!--  <div id="feedback-div">-->
+<!--    <form action="contact.php" method="post" class="form" id="feedback-form1" name="form1" enctype="multipart/form-data">-->
+
+<!--      <p class="name">-->
+<!--        <input name="name" type="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" required placeholder="Name" id="feedback-name" />-->
+<!--      </p>-->
+
+<!--      <p class="email">-->
+<!--        <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="feedback-email" placeholder="Email" required />-->
+<!--      </p>-->
+
+<!--      <p class="text">-->
+<!--        <textarea name="comment" type="comment" class="validate[required,length[6,300]] feedback-input" id="feedback-comment" required placeholder="Hey, I really love the site but I believe that you could incorporate some ..... and also get rid of the ...... on the section."></textarea>-->
+<!--      </p>-->
+
+<!--      <div class="feedback-submit">-->
+<!--        <input type="submit" value="SEND" id="feedback-button-blue" />-->
+<!--        <div class="feedback-ease"></div>-->
+<!--      </div>-->
+<!--    </form>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<button id="popup" class="feedback-button" onclick="toggle_visibility()">Feedback</button>-->
+<!--<script src="_include/js/feedback.js"></script>-->
+
+
+<!--<style>-->
+<!--    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);-->
+<!--html {-->
+<!--  background: #2F3238;-->
+<!--}-->
+
+<!--.feedback-button {-->
+<!--  height: 40px;-->
+<!--  border: solid 3px #CCCCCC;-->
+<!--  background: #333;-->
+<!--  width: 100px;-->
+<!--  line-height: 32px;-->
+<!--  -webkit-transform: rotate(-90deg);-->
+<!--  font-weight: 600;-->
+<!--  color: white;-->
+<!--  transform: rotate(-90deg);-->
+<!--  -ms-transform: rotate(-90deg);-->
+<!--  -moz-transform: rotate(-90deg);-->
+<!--  text-align: center;-->
+<!--  font-size: 17px;-->
+<!--  position: fixed;-->
+<!--  right: -40px;-->
+<!--  top: 45%;-->
+<!--  font-family: "Roboto", helvetica, arial, sans-serif;-->
+<!--  z-index: 999;-->
+<!--}-->
+
+<!--#feedback-main {-->
+<!--  display: none;-->
+<!--  float: left;-->
+<!--  padding-top: 0px;-->
+<!--}-->
+
+<!--#feedback-div {-->
+<!--  background-color: rgba(72, 72, 72, 0.4);-->
+<!--  padding-left: 35px;-->
+<!--  padding-right: 35px;-->
+<!--  padding-top: 35px;-->
+<!--  padding-bottom: 50px;-->
+<!--  width: 450px;-->
+<!--  float: left;-->
+<!--  left: 50%;-->
+<!--  position: absolute;-->
+<!--  margin-top: 30px;-->
+<!--  margin-left: -260px;-->
+<!--  -moz-border-radius: 7px;-->
+<!--  -webkit-border-radius: 7px;-->
+<!--}-->
+
+<!--.feedback-input {-->
+<!--  color: #3c3c3c;-->
+<!--  font-family: "Roboto", helvetica, arial, sans-serif;-->
+<!--  font-weight: 500;-->
+<!--  font-size: 18px;-->
+<!--  border-radius: 0;-->
+<!--  line-height: 22px;-->
+<!--  background-color: #fbfbfb;-->
+<!--  padding: 13px 13px 13px 54px;-->
+<!--  margin-bottom: 10px;-->
+<!--  width: 100%;-->
+<!--  -webkit-box-sizing: border-box;-->
+<!--  -moz-box-sizing: border-box;-->
+<!--  -ms-box-sizing: border-box;-->
+<!--  box-sizing: border-box;-->
+<!--  border: 3px solid rgba(0, 0, 0, 0);-->
+<!--}-->
+
+<!--.feedback-input:focus {-->
+<!--  background: #fff;-->
+<!--  box-shadow: 0;-->
+<!--  border: 3px solid #3498db;-->
+<!--  color: #3498db;-->
+<!--  outline: none;-->
+<!--  padding: 13px 13px 13px 54px;-->
+<!--}-->
+
+
+<!--/* Icons &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+
+<!--#feedback-name {-->
+<!--  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);-->
+<!--  background-size: 30px 30px;-->
+<!--  background-position: 11px 8px;-->
+<!--  background-repeat: no-repeat;-->
+<!--}-->
+
+<!--#feedback-name:focus {-->
+<!--  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);-->
+<!--  background-size: 30px 30px;-->
+<!--  background-position: 8px 5px;-->
+<!--  background-position: 11px 8px;-->
+<!--  background-repeat: no-repeat;-->
+<!--}-->
+
+<!--#feedback-email {-->
+<!--  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);-->
+<!--  background-size: 30px 30px;-->
+<!--  background-position: 11px 8px;-->
+<!--  background-repeat: no-repeat;-->
+<!--}-->
+
+<!--#feedback-email:focus {-->
+<!--  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);-->
+<!--  background-size: 30px 30px;-->
+<!--  background-position: 11px 8px;-->
+<!--  background-repeat: no-repeat;-->
+<!--}-->
+
+<!--#feedback-comment {-->
+<!--  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);-->
+<!--  background-size: 30px 30px;-->
+<!--  background-position: 11px 8px;-->
+<!--  background-repeat: no-repeat;-->
+<!--}-->
+
+<!--#feedback-comment {-->
+<!--  width: 100%;-->
+<!--  height: 150px;-->
+<!--  line-height: 150%;-->
+<!--  resize: vertical;-->
+<!--}-->
+
+<!--input:hover,-->
+<!--#feedback-comment:hover,-->
+<!--input:focus,-->
+<!--#feedback-comment:focus {-->
+<!--  background-color: white;-->
+<!--}-->
+
+<!--#feedback-button-blue {-->
+<!--  font-family: "Roboto", helvetica, arial, sans-serif;-->
+<!--  float: left;-->
+<!--  width: 100%;-->
+<!--  border: #fbfbfb solid 4px;-->
+<!--  cursor: pointer;-->
+<!--  background-color: #3498db;-->
+<!--  color: white;-->
+<!--  font-size: 24px;-->
+<!--  padding-top: 22px;-->
+<!--  padding-bottom: 22px;-->
+<!--  -webkit-transition: all 0.3s;-->
+<!--  -moz-transition: all 0.3s;-->
+<!--  transition: all 0.3s;-->
+<!--  margin-top: -4px;-->
+<!--  font-weight: 700;-->
+<!--}-->
+
+<!--#feedback-button-blue:hover {-->
+<!--  background-color: rgba(0, 0, 0, 0);-->
+<!--  color: #0493bd;-->
+<!--}-->
+
+<!--.feedback-button-blue:hover {-->
+<!--  color: #3498db;-->
+<!--}-->
+
+<!--.feedback-ease {-->
+<!--  width: 0px;-->
+<!--  height: 74px;-->
+<!--  background-color: #fbfbfb;-->
+<!--  -webkit-transition: .3s ease;-->
+<!--  -moz-transition: .3s ease;-->
+<!--  -o-transition: .3s ease;-->
+<!--  -ms-transition: .3s ease;-->
+<!--  transition: .3s ease;-->
+<!--}-->
+
+<!--.feedback-submit:hover .feedback-ease {-->
+<!--  width: 100%;-->
+<!--  background-color: white;-->
+<!--}-->
+
+<!--@media only screen and (max-width: 580px) {-->
+<!--  #feedback-div {-->
+<!--    left: 3%;-->
+<!--    margin-right: 3%;-->
+<!--    width: 88%;-->
+<!--    margin-left: 0;-->
+<!--    padding-left: 3%;-->
+<!--    padding-right: 3%;-->
+<!--  }-->
+<!--}-->
+<!--</style>-->
+<!--<script>-->
+<!--        function toggle_visibility() {-->
+<!--       var e = document.getElementById('feedback-main');-->
+<!--       if(e.style.display == 'block')-->
+<!--          e.style.display = 'none';-->
+<!--       else-->
+<!--          e.style.display = 'block';-->
+<!--    }-->
+
+<!--</script>-->
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: 'Arial', sans-serif;-->
+<!--            background-color: #f4f4f4;-->
+<!--            margin: 0;-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;-->
+<!--            height: 100vh;-->
+<!--        }-->
+
+<!--        .feedback-box {-->
+<!--            background-color: #fff;-->
+<!--            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);-->
+<!--            padding: 20px;-->
+<!--            border-radius: 8px;-->
+<!--            width: 300px;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        .feedback-box h2 {-->
+<!--            color: #333;-->
+<!--        }-->
+
+<!--        .form-group {-->
+<!--            margin-bottom: 15px;-->
+<!--        }-->
+
+<!--        label {-->
+<!--            display: block;-->
+<!--            margin-bottom: 5px;-->
+<!--            color: #555;-->
+<!--        }-->
+
+<!--        input[type="text"],-->
+<!--        input[type="email"],-->
+<!--        textarea {-->
+<!--            width: 100%;-->
+<!--            padding: 8px;-->
+<!--            box-sizing: border-box;-->
+<!--            border: 1px solid #ccc;-->
+<!--            border-radius: 4px;-->
+<!--        }-->
+
+<!--        input[type="submit"] {-->
+<!--            background-color: #4CAF50;-->
+<!--            color: #fff;-->
+<!--            padding: 10px 15px;-->
+<!--            border: none;-->
+<!--            border-radius: 4px;-->
+<!--            cursor: pointer;-->
+<!--            transition: background-color 0.3s;-->
+<!--        }-->
+
+<!--        input[type="submit"]:hover {-->
+<!--            background-color: #45a049;-->
+<!--        }-->
+<!--    </style>-->
+<!--    <title>Feedback Form</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="feedback-box">-->
+<!--        <h2>Feedback</h2>-->
+<!--        <form action="#" method="post">-->
+<!--            <div class="form-group">-->
+<!--                <label for="name">Name:</label>-->
+<!--                <input type="text" id="name" name="name" required>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <label for="email">Email:</label>-->
+<!--                <input type="email" id="email" name="email" required>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <label for="message">Message:</label>-->
+<!--                <textarea id="message" name="message" rows="4" required></textarea>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <input type="submit" value="Submit">-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: 'Arial', sans-serif;-->
+<!--            background-color:lightgray;-->
+<!--            margin: 0;-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;-->
+<!--            height: 100vh;-->
+<!--        }-->
+
+<!--        .feedback-box {-->
+<!--            background-color:lightblue;-->
+<!--            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);-->
+<!--            padding: 30px;-->
+<!--            border-radius: 12px;-->
+<!--            width: 400px;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        .feedback-box h2 {-->
+<!--            color: #fff;-->
+<!--            margin-bottom: 20px;-->
+<!--        }-->
+
+<!--        .form-group {-->
+<!--            margin-bottom: 20px;-->
+<!--        }-->
+
+<!--        label {-->
+<!--            display: block;-->
+<!--            margin-bottom: 10px;-->
+<!--            color: #fff;-->
+<!--            font-weight: bold;-->
+<!--        }-->
+
+<!--        input[type="text"],-->
+<!--        input[type="email"],-->
+<!--        textarea {-->
+<!--            width: 100%;-->
+<!--            padding: 12px;-->
+<!--            box-sizing: border-box;-->
+<!--            border: 1px solid #ccc;-->
+<!--            border-radius: 6px;-->
+<!--            background-color: #fff;-->
+<!--            color: #333;-->
+<!--        }-->
+
+<!--        input[type="submit"] {-->
+<!--            background-color: #2ecc71;-->
+<!--            color: #fff;-->
+<!--            padding: 15px 20px;-->
+<!--            border: none;-->
+<!--            border-radius: 8px;-->
+<!--            cursor: pointer;-->
+<!--            transition: background-color 0.3s;-->
+<!--        }-->
+
+<!--        input[type="submit"]:hover {-->
+<!--            background-color: #27ae60;-->
+<!--        }-->
+<!--    </style>-->
+<!--    <title>Feedback Form</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="feedback-box">-->
+<!--        <h2>Feedback</h2>-->
+<!--        <form action="#" method="post">-->
+<!--            <div class="form-group">-->
+<!--                <label for="name">Name:</label>-->
+<!--                <input type="text" id="name" name="name" required>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <label for="email">Email:</label>-->
+<!--                <input type="email" id="email" name="email" required>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <label for="message">Message:</label>-->
+<!--                <textarea id="message" name="message" rows="6" required></textarea>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <input type="submit" value="Submit">-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #cc0000;
+        }
+
+        .contact-info {
+            text-align: right;
+        }
+
+        .rights-reserved {
+            flex-basis: 100%;
+            margin-top: 10px; /* Added margin for spacing */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Your website content goes here -->
+
+    <footer>
+        <div class="footer-links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="Skills">My Skills</a></li><br>
+                <li><a href="Achievements">Achievements</a></li><br>
+                <li><a href="Feedback">Feedback</a></li><br>
+                <li><a href="Contact">Contact</a></li><br>
+                <li><a href="Hobbies">Hobbies</a></li>
+            </ul>
         </div>
-
-        <div class="card">
-           <h2>Reading and Writing Languages</h2>
-        <ul>
-          <li>&#9654; English :<a class="bb">(Advance Knowledge)</a></li>
-          <li>&#9654; Telugu :<a class="bb">(Advance Knowledge)</a></li>
-          <li>&#9654; Hindi :<a class="bb">(Intermediate Knowledge)</a></li>
-        </ul>
+        <div class="contact-info">
+            <p>Mobile: +1-123-456-7890</p>
+            <p>Email: yourname@gmail.com</p>
         </div>
-
-
-
-        <section class="container">
-            <center>
-                <h1 class="lo">Office Suite Skills</h1>
-            </center>
-            <section class="container">
-        <div class="card">
-             <h2>Microsoft Word Skills</h2>
-        <ul>
-          <li>&#9654; Document creation and formatting </li>
-          <li>&#9654; Editing and proofreading </li>
-          <li>&#9654; Working with styles and templates</li>
-          <li>&#9654; Collaboration features (track changes, comments)</li>
-        </ul>
-        </div>
-
-        <div class="card">
-           <h2>Microsoft PowerPoint Skills</h2>
-        <ul>
-            <li>&#9654; Presentation creation and design</li>
-          <li>&#9654; Slide layout and formatting </li>
-          <li>&#9654; Animation and transition effects</li>
-          <li>&#9654; Use of multimedia elements (images, videos) </li>
-            <li>&#9654; Collaboration features for group presentations </li>
-        </ul>
-        </div>
-     <div class="card">
-            <h2>Microsoft Excel Skills</h2>
-        <ul>
-          <li>Data entry and manipulation </li>
-          <li>Formulas and functions <li>
-          <li>Pivot tables and charts </li>
-          <li>Data analysis and visualization</li>
-            <li>Macros and automation (VBA)</li>
-        </ul>
-        </div>
-
-        <div class="card">
-            <h2>Overall Office Suite Skills</h2>
-        <ul>
-          <li>Familiarity with the overall Microsoft Office environment </a></li>
-          <li>Integration between different Office applications </a></li>
-          <li>File management and organization </li>
-            <li>Collaboration and sharing features (OneDrive, SharePoint)</li>
-        </ul>
-        </div>
-    </section>
-        </section>
-
-        <section class="container">
-            <center>
-                <h1 class="lo">Office Suite Skills</h1>
-            </center>
-            <section class="container">
-        <div class="card">
-             <h2>Microsoft Word Skills</h2>
-        <ul>
-          <li>&#9654; Document creation and formatting </li>
-          <li>&#9654; Editing and proofreading </li>
-          <li>&#9654; Working with styles and templates</li>
-          <li>&#9654; Collaboration features (track changes, comments)</li>
-        </ul>
-        </div>
-
-        <div class="card">
-           <h2>Microsoft PowerPoint Skills</h2>
-        <ul>
-            <li>&#9654; Presentation creation and design</li>
-          <li>&#9654; Slide layout and formatting </li>
-          <li>&#9654; Animation and transition effects</li>
-          <li>&#9654; Use of multimedia elements (images, videos) </li>
-            <li>&#9654; Collaboration features for group presentations </li>
-        </ul>
-        </div>
-     <div class="card">
-            <h2>Microsoft Excel Skills</h2>
-        <ul>
-          <li>Data entry and manipulation </li>
-          <li>Formulas and functions <li>
-          <li>Pivot tables and charts </li>
-          <li>Data analysis and visualization</li>
-            <li>Macros and automation (VBA)</li>
-        </ul>
-        </div>
-
-        <div class="card">
-            <h2>Overall Office Suite Skills</h2>
-        <ul>
-          <li>Familiarity with the overall Microsoft Office environment </a></li>
-          <li>Integration between different Office applications </a></li>
-          <li>File management and organization </li>
-            <li>Collaboration and sharing features (OneDrive, SharePoint)</li>
-        </ul>
-        </div>
-    </section>
-        </section>
-
-
-
-
-
-    </section>
-</div>
+        <p class="rights-reserved">All Rights Reserved &copy; 2024 Your Name</p>
+    </footer>
 
 </body>
-    </section>
-</div>
+</html>
+
