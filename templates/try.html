@@ -330,18 +330,18 @@ LPT School, Kakinada, Andhra Pradesh.
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 12%; /* Adjusted padding */
+    padding: 50px 10%; /* Adjusted padding */
 }
 
 .about-left img {
-    max-width: 60%;
-    height: auto;
+    max-width: 50%; /* Adjusted max-width */
+    margin-right: 150px; /* Adjusted margin-right */
     border-radius: 25px;
-    margin-right: 280px; /* Adjusted margin */
+    height: auto;
 }
 
 .about-right {
-    width: 90%; /* Adjusted width */
+    width: 80%; /* Adjusted width */
     margin-top: 10px;
 }
 
@@ -400,6 +400,19 @@ LPT School, Kakinada, Andhra Pradesh.
                 margin-right: 10px;
                 color: #e74d06;
             }
+            @media (max-width: 768px) {
+    #about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-left img {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .about-right {
+        width: 100%;
+    }
+}
               <!--navbar css starts-->
 
         </style>
@@ -457,27 +470,13 @@ LPT School, Kakinada, Andhra Pradesh.
               0.125em 0.125em 0.25em rgba(0,0,0,.15);
     }
 
-    @media (min-width: 800px) {
-        :root {
-            --fs-h1: 4.5rem;
-            --fs-h2: 3.75rem;
-            --fs-h3: 1.5rem;
-            --fs-body: 1.125rem;
-        }
-    }
+
 
     /* General styles */
 
-    html {
-      scroll-behavior: smooth;
-    }
 
-    body {
-      margin: 0;
-      font-family: var(--ff-primary);
-      font-size: var(--fs-body);
-      line-height: 1.6;
-    }
+
+
 
     section {
       padding: 4em 2em;
@@ -487,6 +486,7 @@ LPT School, Kakinada, Andhra Pradesh.
      {
        background-color:gray;
        margin-top:4px;
+       height:auto;
      }
 
     strong {
@@ -545,21 +545,19 @@ LPT School, Kakinada, Andhra Pradesh.
     }
 #my-skills h3 {
       color:aqua;
-
+       font-size:25px;
     }
 
 
-           .container
-           {
-           display:flex;
-           justify-content: space-around;
-           overflow: hidden;
-           }
+         .container {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+}
 
-
-
-        .card {
-            background-color: gray;
+.card {
+    background-color: gray;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 9px;
@@ -570,41 +568,67 @@ LPT School, Kakinada, Andhra Pradesh.
     margin: 1rem;
     padding: 1.5rem;
     border-radius: 8px;
-    max-width: 500px;
+    max-width: 500px; /* Set a fixed width */
     height: 8cm;
-
     overflow: hidden;
-    }
- .card:hover
-{
-background-color:white;
-transform: scale(1.2);
+    flex: 1 1 300px; /* Allow boxes to grow or shrink based on available space */
 }
 
-        h2 {
-            color: #333;
-            margin-bottom: 15px;
-        }
+.card:hover {
+    background-color: white;
+    transform: scale(1.2);
+}
 
-        .category {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+.category {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
 
-        li {
-            margin-bottom: 8px;
-        }
-        .lo
-        {
-        color:lightgreen;
-        }
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.lo {
+    color: lightgreen;
+    font-size:30px;
+}
+
+/* Adjust the margin for the second set of cards */
+.container:nth-child(2) {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+/* Media query to adjust styles for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards in the container */
+    }
+
+    .card {
+        max-width: 100%; /* Allow cards to take full width on smaller screens */
+    }
+
+    .container:nth-child(2) {
+        margin-top: 0; /* Remove margin between the two sets on smaller screens */
+    }
+}
+
+
+
+
   </style>
-        <body>
+        <body class="bod">
 
   <!-- My skills section -->
   <section id="my-skills">
@@ -634,30 +658,140 @@ transform: scale(1.2);
     </div> <!-- / skills -->
   </section>
 
-  <center> <h1 class="lo">Speaking and writing skills</h1></center>
-  <div >
-  <section class="container">
+
+
+
+<!-- Additional set of four cards -->
+  <center>
+      <h1 class="lo">Speaking Language Skills</h1>
+  </center>
+<div class="container">
+    <section class="container">
+        <div class="card">
+            <h2>Speaking Languages</h2>
+        <ul >
+          <li>&#9654; English :<a class="bb">(Advance Knowledge)</a></li>
+          <li>&#9654; Telugu :<a class="bb">(Advance Knowledge)</a><li>
+          <li>&#9654; Hindi : <a class="bb">(Advance Knowledge)</a></li>
+          <li>&#9654; Odia :<a class="bb">(Advance Knowledge)</a></li>
+        </ul>
+        </div>
 
         <div class="card">
-    <h2>Speaking Languages</h2>
+           <h2>Reading and Writing Languages</h2>
+        <ul>
+          <li>&#9654; English :<a class="bb">(Advance Knowledge)</a></li>
+          <li>&#9654; Telugu :<a class="bb">(Advance Knowledge)</a></li>
+          <li>&#9654; Hindi :<a class="bb">(Intermediate Knowledge)</a></li>
+        </ul>
+        </div>
+
+
+
+        <section class="container">
+            <center>
+                <h1 class="lo">Office Suite Skills</h1>
+            </center>
+            <section class="container">
+        <div class="card">
+             <h2>Microsoft Word Skills</h2>
+        <ul>
+          <li>&#9654; Document creation and formatting </li>
+          <li>&#9654; Editing and proofreading </li>
+          <li>&#9654; Working with styles and templates</li>
+          <li>&#9654; Collaboration features (track changes, comments)</li>
+        </ul>
+        </div>
+
+        <div class="card">
+           <h2>Microsoft PowerPoint Skills</h2>
+        <ul>
+            <li>&#9654; Presentation creation and design</li>
+          <li>&#9654; Slide layout and formatting </li>
+          <li>&#9654; Animation and transition effects</li>
+          <li>&#9654; Use of multimedia elements (images, videos) </li>
+            <li>&#9654; Collaboration features for group presentations </li>
+        </ul>
+        </div>
+     <div class="card">
+            <h2>Microsoft Excel Skills</h2>
+        <ul>
+          <li>Data entry and manipulation </li>
+          <li>Formulas and functions <li>
+          <li>Pivot tables and charts </li>
+          <li>Data analysis and visualization</li>
+            <li>Macros and automation (VBA)</li>
+        </ul>
+        </div>
+
+        <div class="card">
+            <h2>Overall Office Suite Skills</h2>
+        <ul>
+          <li>Familiarity with the overall Microsoft Office environment </a></li>
+          <li>Integration between different Office applications </a></li>
+          <li>File management and organization </li>
+            <li>Collaboration and sharing features (OneDrive, SharePoint)</li>
+        </ul>
+        </div>
+    </section>
+        </section>
+
+        <section class="container">
+            <center>
+                <h1 class="lo">My Interpersonal Skills</h1>
+            </center>
+            <section class="container">
+        <div class="card">
+             <h2>Communication Skills</h2>
+         <ul>
+        <li>&#9654; Writing and organizing documents</li>
+        <li>&#9654; Checking and fixing mistakes</li>
+        <li>&#9654; Using different styles and templates</li>
+        <li>&#9654; Working together (making suggestions, leaving comments)</li>
+        <li>&#9654; Expressing ideas clearly</li>
+        <li>&#9654; Listening and understanding</li>
+        <li>&#9654; Speaking and presenting information</li>
+    </ul>
+        </div>
+
+        <div class="card">
+    <h2>Collaboration and Teamwork</h2>
     <ul>
-        <li>▶ English : (Advance Knowledge)</li>
-        <li>▶ Telugu : (Advance Knowledge)</li>
-        <li>▶ Hindi : (Advance Knowledge)</li>
-        <li>▶ Odia : (Advance Knowledge)</li>
+        <li>&#9654; Working together with others</li>
+        <li>&#9654; Sharing ideas and tasks</li>
+        <li>&#9654; Helping each other out</li>
+        <li>&#9654; Listening to everyone's input</li>
+        <li>&#9654; Respecting different opinions</li>
+        <li>&#9654; Celebrating successes as a team</li>
+    </ul>
+</div>
+     <div class="card">
+    <h2>Leadership</h2>
+    <ul>
+        <li>&#9654; Guiding and directing a group</li>
+        <li>&#9654; Making decisions for the team</li>
+        <li>&#9654; Inspiring others to do their best</li>
+        <li>&#9654; Taking responsibility for outcomes</li>
+        <li>&#9654; Listening and understanding team members</li>
+        <li>&#9654; Setting a positive example</li>
     </ul>
 </div>
 
-<div class="card">
-    <h2>Reading and Writing Languages</h2>
+        <div class="card">
+    <h2>Networking and Relationship Building</h2>
     <ul>
-        <li>▶ English : (Advance Knowledge)</li>
-        <li>▶ Telugu : (Advance Knowledge)</li>
-        <li>▶ Hindi : (Intermediate Knowledge)</li>
+        <li>&#9654; Connecting with others</li>
+        <li>&#9654; Building positive connections</li>
+        <li>&#9654; Making friends in your field</li>
+        <li>&#9654; Helping and supporting each other</li>
+        <li>&#9654; Listening and understanding different perspectives</li>
+        <li>&#9654; Building trust and goodwill</li>
     </ul>
 </div>
-  </section></div>
-
+    </section>
+        </section>
+    </section>
+</div>
 </body>
     </section>
 </div>
@@ -665,29 +799,15 @@ transform: scale(1.2);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--ContactMe code STARTS here-->
 <div class="hh">
-<section>
+<div>
+    <section>
+
 <div id="contact">
   <div class="content">
   </div></div>
-<div class="container">
+<div class="container1">
 	<div class="map">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92992.03811666932!2d80.6225946!3d16.4419257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f0a2a7d81943%3A0x8ba5d78f65df94b8!2sK%20L%20UNIVERSITY%2C%20Vaddeswaram%2C%20Andhra%20Pradesh%20522303!5e0!3m2!1sen!2sin!4v1468899355787" width="100%" height="650px" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
@@ -695,7 +815,7 @@ transform: scale(1.2);
 		<h1 class="title">Contact Me</h1>
 		<h2 class="subtitle"></h2>
 
-		<form action="http://localhost:5000/successfull", method="POST">
+		<form action="https://formspree.io/f/mwkdgjgv", method="POST">
 			<input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="e-mail" placeholder="Your E-mail Address" required>
 <input type="tel" name="phone" placeholder="Your Phone Number" required>
@@ -725,35 +845,29 @@ html, body {
   font-family: 'Libre Franklin', sans-serif;
 }
 
-.container {
-    background: $container-color;
+.container1 {
+background-color: $container-color;
     width: 100%;
-    height: 1000px;
+<!--    height: 800px;-->
     position: relative;
-
-}
-@media screen and (max-width: 768px) {
-    .map,
-    .contact-form {
-        width: 100%; /* Make both sections full width for smaller screens */
-        float: none; /* Clear the float for smaller screens */
-    }
+    display: flex;
 }
 
 .map {
   width: 45%;
-  float: left;
+<!--  float: left;-->
 }
 .hh
 {
-background-color:rgb(230,230,250);
-margin-top:6px;
+background-color:#F5DEB3;
+width:100%;
+margin-top:4px;
 }
 
 .contact-form {
-  width: 45%;
-   margin-left: 0;
-  float: left;
+  width: 53%;
+  margin-left: 2%;
+<!--  float: left;-->
 }
 
 .contact-form .title {
@@ -772,35 +886,33 @@ margin-top:6px;
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
+  width: 330px;
   padding: 3%;
   margin: 2% 8%;
   color: $text-color;
   border: 1px solid $input-color;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: $text-color;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+     overflow: hidden;/* Change this to a percentage or vw */
+    /* Other styles */
 }
 
+.contact-form input,
+.contact-form textarea {
+    margin: 1% 1%; /* Adjust as needed */
+    /* Other styles */
+}
 .contact-form .btn-send {
-  background:white;
+  background:lightgreen;
   width: 180px;
   height: 60px;
   font-weight: 700;
   margin: 2% 8%;
-  border: none;
-  border: 8px solid;
-  border-image: repeating-linear-gradient(135deg,blue 0 10px,red 0 20px,lightblue 0 30px) 8;
-  -webkit-mask:
-    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
-     var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
-    conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
-     0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
-    linear-gradient(#000 0 0) padding-box no-repeat;
-  transition: .3s, -webkit-mask-position .3s .3s;
-}
+
+
 .contact-form .btn-send:hover {
 
         color: white;
@@ -808,21 +920,16 @@ margin-top:6px;
   color: #CC333F;
   transition: .3s, -webkit-mask-size .3s .3s;
     }
-    #about .content h2 {
-  text-align: center;
-  background-color: #333;
-      color: #fff;
-      border-radius:50px 20px;
-}
+
  #contact .content h2 {
   text-align: center;
   background-color: #333;
       color: #fff;
-      border-radius:50px 20px;
+
 }
-</style>
-</section>
-</div><br><br>
+</style></div>
+    </section>
+</div>
 <!--ContactMe code ENDS here-->
 
 
@@ -835,216 +942,7 @@ margin-top:6px;
 
 
 <!--FEEDBACK CODE STARTS HERE-->
-<div class="pp1">
-<div class="pp">
-<section><br>
-    <div class="formContainer">
-        <div class="heading">
-            FEEDBACK PLEASE
-        </div>
-        <div class="form">
-            <form id="form" method="POST">
-                <label for="name">Name</label>
-                <input name="name" type="text" id="name" required/>
-                <label for="email">Email</label>
-                <input name="email" type="email" id="email" required/>
-                <label for="rate">Rate</label>
-                <input name="rate" type="number" id="rate" min="1" max="5" required/>
-                <label for="feedback">Feedback</label>
-                <input name="feedback" type="text" id="feedback" required/>
-                <button type="submit">SUBMIT</button>
-            </form>
-        </div></div>
-</section><br>
-<style>
 
-
-       div.formContainer {
-    margin: 4em auto 4em auto;
-    width: 80%;
-    height: 70vh;
-    color: #FCE205;
-    border: 2px solid red;
-    border-radius: 2px;
-    /* margin-top:; */ /* Remove this line or set a value like margin-top: 0; */
-}
-
-
-        div.heading {
-            margin: 0 auto 0 auto;
-
-            width: 100%;
-            padding: 1em 0 1em 0;
-            letter-spacing: 0.1em;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-bottom: 1px solid #FCE205;
-            text-align: center;
-            background-color: red;
-            color: black;
-
-        }
-
-        div.description {
-            padding: 1em 0 1em 0;
-            width: 80%;
-            margin: 0 auto 0 auto;
-            text-align: center;
-        }
-        .pp
-        {
-        background-color:#F5DEB3;
-        margin-top:-84px;
-        }
-
-
-        div.form {
-            margin: 0 auto 0 auto;
-            width: 100%;
-        }
-
-        div.form form {
-            margin: 0 auto 0 auto;
-            width: 80%;
-        }
-
-        div.form label {
-            display: block;
-            width: 80%;
-            margin: 1em auto 1em auto;
-            outline: none;
-            color: red;
-            font-weight: bolder;
-            letter-spacing: 0.1;
-        }
-
-        div.form input {
-            display: block;
-            width: 80%;
-            margin: 1em auto 1em auto;
-            outline: none;
-            color: red;
-            padding: 1.2em 0 1em 1.2em;
-            background-color: white;
-            border: 0.5px solid #FCE205;
-        }
-
-        div.form textarea {
-    display: block;
-    width: 80%;
-    margin: 1em auto 1em auto;
-    outline: none;
-    color: red;
-    padding: 1.2em 0 1em 1.2em;
-    background-color: white;
-    border: 0.5px solid #FCE205;
-    height: 8em;
-    resize: none;
-}
-
-
-        div.form button {
-            outline: none;
-            margin: 2em auto 2em auto;
-            padding: 2em;
-            cursor: pointer;
-            border: none;
-            display: block;
-            width: 60%;
-            text-align: center;
-            border: red;
-        }
-
-        div.form input:active,
-        div.form input:focus,
-        div.form select:active,
-        div.form select:focus,
-        div.form textarea:active,
-        div.form textarea:focus,
-        div.form button:active,
-        div.form button:hover {
-            box-shadow: 0 0 2px 2px white;
-        }
-
-        div.form button {
-            background-color:green;
-            color: #FCE205;
-            font-weight: bolder;
-            transition: all 0.2s linear;
-            padding: 1em; /* Adjust the padding */
-    width: 80%;
-        }
-
-        @keyframes status {
-            from {
-                transform: scale(0);
-            }
-            to {
-                transform: scale(1);
-            }
-        }
-
-        div.statusActive {
-            display: block;
-            width: 80%;
-            margin: 1em auto 1em auto;
-            padding: 1.2em 0 1em 1.2em;
-            background-color: #FCE205;
-            color: black;
-            text-align: center;
-            animation-name: status;
-            animation-duration: 0.3s;
-            transition: all 0.2s linear;
-        }
-
-        div.loadingActive {
-            width: 90%;
-            margin: 4em auto 4em auto;
-            grid-template-columns: 33.3% 33.3% 33.3%;
-            display: grid;
-            transition: all linear 0.2s;
-        }
-
-        div.loadingActive div {
-            padding: 0.5em;
-            background-color: #FCE205;
-            animation-name: rotatingDiv;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-        }
-
-        @keyframes rotatingDiv {
-            from {
-                transform: rotate(-180deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        @media only screen and (min-width: 1224px) {
-            div.formContainer {
-                width: 500px;
-            }
-        }
-
-        @media only screen and (min-width: 1824px) {
-            div.formContainer {
-                width: 500px;
-            }
-        }
-
-        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-            div.formContainer {
-                width: 80%;
-            }
-        }
-        div.form input,
-div.form textarea {
-    /* Other styles */
-    padding: 1.2em 0 1em 0; /* Adjust the left padding */
-}
-</style></div></div>
 <!--FEEDBACK CODE ENDS HERE-->
 
 

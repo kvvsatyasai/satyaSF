@@ -455,74 +455,439 @@
 <!--</html>-->
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Languages Card</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Languages Card</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: 'Arial', sans-serif;-->
+<!--            background-color: #f4f4f4;-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;-->
+<!--            height: 100vh;-->
+<!--            margin: 0;-->
+<!--        }-->
 
-        .card {
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 8px;
-            width: 300px;
-            margin-right: 20px; /* Add margin to separate the cards */
-        }
+<!--        .card {-->
+<!--            background-color: #fff;-->
+<!--            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);-->
+<!--            padding: 20px;-->
+<!--            border-radius: 8px;-->
+<!--            width: 300px;-->
+<!--            margin-right: 20px; /* Add margin to separate the cards */-->
+<!--        }-->
 
-        h2 {
-            color: #333;
-            margin-bottom: 15px;
-        }
+<!--        h2 {-->
+<!--            color: #333;-->
+<!--            margin-bottom: 15px;-->
+<!--        }-->
 
-        .category {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
+<!--        .category {-->
+<!--            font-weight: bold;-->
+<!--            margin-bottom: 8px;-->
+<!--        }-->
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+<!--        ul {-->
+<!--            list-style: none;-->
+<!--            padding: 0;-->
+<!--        }-->
 
-        li {
-            margin-bottom: 8px;
-        }
-    </style>
-</head>
-<body>
+<!--        li {-->
+<!--            margin-bottom: 8px;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
 
-<div class="card">
-    <h2>Speaking Languages</h2>
-    <div class="category">Speaking Languages</div>
-    <ul>
-        <li>▶ English : (Advance Knowledge)</li>
-        <li>▶ Telugu : (Advance Knowledge)</li>
-        <li>▶ Hindi : (Advance Knowledge)</li>
-        <li>▶ Odia : (Advance Knowledge)</li>
-    </ul>
-</div>
+<!--<div class="card">-->
+<!--    <h2>Speaking Languages</h2>-->
+<!--    <div class="category">Speaking Languages</div>-->
+<!--    <ul>-->
+<!--        <li>▶ English : (Advance Knowledge)</li>-->
+<!--        <li>▶ Telugu : (Advance Knowledge)</li>-->
+<!--        <li>▶ Hindi : (Advance Knowledge)</li>-->
+<!--        <li>▶ Odia : (Advance Knowledge)</li>-->
+<!--    </ul>-->
+<!--</div>-->
 
-<div class="card">
-    <h2>Reading and Writing Languages</h2>
-    <div class="category">Reading and Writing Languages</div>
-    <ul>
-        <li>▶ English : (Advance Knowledge)</li>
-        <li>▶ Telugu : (Advance Knowledge)</li>
-        <li>▶ Hindi : (Intermediate Knowledge)</li>
-    </ul>
+<!--<div class="card">-->
+<!--    <h2>Reading and Writing Languages</h2>-->
+<!--    <div class="category">Reading and Writing Languages</div>-->
+<!--    <ul>-->
+<!--        <li>▶ English : (Advance Knowledge)</li>-->
+<!--        <li>▶ Telugu : (Advance Knowledge)</li>-->
+<!--        <li>▶ Hindi : (Intermediate Knowledge)</li>-->
+<!--    </ul>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+<div class="sl">
+    <section>
+        <style>
+    /*Counts padding as part of the width*/
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    /* Custom Properties*/
+
+    :root {
+        --ff-primary: 'Source Sans Pro', sans-serif;
+        --ff-secondary: 'Oswald', monospace;
+
+        --fw-reg: 300;
+        --fw-bold: 900;
+
+        --clr-light: #fff;
+        --clr-dark: #303030;
+        --clr-accent: #235175;
+        --clr-accent-hover: #3c89c3;
+        --clr-subtitle: #ffa64d;
+
+        --fs-h1: 3rem;
+        --fs-h2: 2.25rem;
+        --fs-h3: 1.25rem;
+        --fs-body: 1rem;
+
+        --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+              0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    }
+
+
+
+    /* General styles */
+
+
+
+
+
+    section {
+      padding: 4em 2em;
+    }
+
+     .sl
+     {
+       background-color:gray;
+       margin-top:4px;
+       height:auto;
+     }
+
+    strong {
+      font-weight: var(--fw-bold);
+    }
+    /* My skills section */
+
+    #my-skills {
+      background-blend-mode: multiply;
+      background-size: cover;
+      color: var(--clr-light);
+      text-align: justify;
+    }
+
+    #my-skills h2 {
+      color: lightgreen;
+      position: relative;
+      text-align: center;
+      font-size: var(--fs-h2);
+    }
+
+    #my-skills h2::after {
+      content: '';
+      display: block;
+      width: 2.5em;
+      height: 1px;
+      margin: 0.5em auto 1em;
+      opacity: 0.25;
+    }
+
+    #skills {
+      margin-bottom: 3em;
+    }
+
+    #skill {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: 800px) {
+      #skills {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #skill + #skill {
+        margin-left: 4em;
+      }
+    }
+#my-skills h3 {
+      color:aqua;
+       font-size:25px;
+    }
+
+
+         .container {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+}
+
+.card {
+    background-color: gray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 9px;
+    border-style: solid;
+    border-color: skyblue;
+    transition: transform .2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 500px; /* Set a fixed width */
+    height: 8cm;
+    overflow: hidden;
+    flex: 1 1 300px; /* Allow boxes to grow or shrink based on available space */
+}
+
+.card:hover {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.category {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.lo {
+    color: lightgreen;
+    font-size:30px;
+}
+
+/* Adjust the margin for the second set of cards */
+.container:nth-child(2) {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+/* Media query to adjust styles for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards in the container */
+    }
+
+    .card {
+        max-width: 100%; /* Allow cards to take full width on smaller screens */
+    }
+
+    .container:nth-child(2) {
+        margin-top: 0; /* Remove margin between the two sets on smaller screens */
+    }
+}
+
+
+
+
+  </style>
+        <body class="bod">
+
+  <!-- My skills section -->
+  <section id="my-skills">
+    <h2>Skills</h2>
+    <div id="skills">
+      <div id="skill">
+        <h3>Front-End Development</h3>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Flask using python</li>
+            <li>Django using python</li>
+          <li>React</li>
+        </ul>
+      </div> <!-- / skill -->
+
+      <div id="skill">
+        <h3>Back-End Development</h3>
+        <ul class="skills-list">
+          <li>MongoDB</li>
+          <li>Sql</li>
+          <li>PostgreSql</li>
+          <li>Django Inbuilt Database</li>
+        </ul>
+      </div> <!-- / skill -->
+
+    </div> <!-- / skills -->
+  </section>
+
+
+
+
+<!-- Additional set of four cards -->
+  <center>
+      <h1 class="lo">Speaking Language Skills</h1>
+  </center>
+<div class="container">
+    <section class="container">
+        <div class="card">
+            <h2>Speaking Languages</h2>
+        <ul >
+          <li>&#9654; English :<a class="bb">(Advance Knowledge)</a></li>
+          <li>&#9654; Telugu :<a class="bb">(Advance Knowledge)</a><li>
+          <li>&#9654; Hindi : <a class="bb">(Advance Knowledge)</a></li>
+          <li>&#9654; Odia :<a class="bb">(Advance Knowledge)</a></li>
+        </ul>
+        </div>
+
+        <div class="card">
+           <h2>Reading and Writing Languages</h2>
+        <ul>
+          <li>&#9654; English :<a class="bb">(Advance Knowledge)</a></li>
+          <li>&#9654; Telugu :<a class="bb">(Advance Knowledge)</a></li>
+          <li>&#9654; Hindi :<a class="bb">(Intermediate Knowledge)</a></li>
+        </ul>
+        </div>
+
+
+
+        <section class="container">
+            <center>
+                <h1 class="lo">Office Suite Skills</h1>
+            </center>
+            <section class="container">
+        <div class="card">
+             <h2>Microsoft Word Skills</h2>
+        <ul>
+          <li>&#9654; Document creation and formatting </li>
+          <li>&#9654; Editing and proofreading </li>
+          <li>&#9654; Working with styles and templates</li>
+          <li>&#9654; Collaboration features (track changes, comments)</li>
+        </ul>
+        </div>
+
+        <div class="card">
+           <h2>Microsoft PowerPoint Skills</h2>
+        <ul>
+            <li>&#9654; Presentation creation and design</li>
+          <li>&#9654; Slide layout and formatting </li>
+          <li>&#9654; Animation and transition effects</li>
+          <li>&#9654; Use of multimedia elements (images, videos) </li>
+            <li>&#9654; Collaboration features for group presentations </li>
+        </ul>
+        </div>
+     <div class="card">
+            <h2>Microsoft Excel Skills</h2>
+        <ul>
+          <li>Data entry and manipulation </li>
+          <li>Formulas and functions <li>
+          <li>Pivot tables and charts </li>
+          <li>Data analysis and visualization</li>
+            <li>Macros and automation (VBA)</li>
+        </ul>
+        </div>
+
+        <div class="card">
+            <h2>Overall Office Suite Skills</h2>
+        <ul>
+          <li>Familiarity with the overall Microsoft Office environment </a></li>
+          <li>Integration between different Office applications </a></li>
+          <li>File management and organization </li>
+            <li>Collaboration and sharing features (OneDrive, SharePoint)</li>
+        </ul>
+        </div>
+    </section>
+        </section>
+
+        <section class="container">
+            <center>
+                <h1 class="lo">Office Suite Skills</h1>
+            </center>
+            <section class="container">
+        <div class="card">
+             <h2>Microsoft Word Skills</h2>
+        <ul>
+          <li>&#9654; Document creation and formatting </li>
+          <li>&#9654; Editing and proofreading </li>
+          <li>&#9654; Working with styles and templates</li>
+          <li>&#9654; Collaboration features (track changes, comments)</li>
+        </ul>
+        </div>
+
+        <div class="card">
+           <h2>Microsoft PowerPoint Skills</h2>
+        <ul>
+            <li>&#9654; Presentation creation and design</li>
+          <li>&#9654; Slide layout and formatting </li>
+          <li>&#9654; Animation and transition effects</li>
+          <li>&#9654; Use of multimedia elements (images, videos) </li>
+            <li>&#9654; Collaboration features for group presentations </li>
+        </ul>
+        </div>
+     <div class="card">
+            <h2>Microsoft Excel Skills</h2>
+        <ul>
+          <li>Data entry and manipulation </li>
+          <li>Formulas and functions <li>
+          <li>Pivot tables and charts </li>
+          <li>Data analysis and visualization</li>
+            <li>Macros and automation (VBA)</li>
+        </ul>
+        </div>
+
+        <div class="card">
+            <h2>Overall Office Suite Skills</h2>
+        <ul>
+          <li>Familiarity with the overall Microsoft Office environment </a></li>
+          <li>Integration between different Office applications </a></li>
+          <li>File management and organization </li>
+            <li>Collaboration and sharing features (OneDrive, SharePoint)</li>
+        </ul>
+        </div>
+    </section>
+        </section>
+
+
+
+
+
+    </section>
 </div>
 
 </body>
-</html>
+    </section>
+</div>
