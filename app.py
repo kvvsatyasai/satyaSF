@@ -1,36 +1,36 @@
 from flask import Flask,render_template,request, redirect, url_for
-myweb=Flask(__name__)
+app=Flask(__name__)
 
 
-@myweb.route('/')
+@app.route('/')
 def landingpage():
     return render_template('LandingPage.html')
 
-@myweb.route('/Home')
+@app.route('/Home')
 def home():
     return render_template('Home.html')
 
-@myweb.route("/AboutMe")
+@app.route("/AboutMe")
 def About():
     return render_template('AboutMe.html')
 
 
 
-@myweb.route("/Hobbies")
+@app.route("/Hobbies")
 def hobbies():
     return render_template('Hobbies.html')
 
-@myweb.route("/MoreAbout")
+@app.route("/MoreAbout")
 def moreabouteducation():
     return render_template('MoreAbout.html')
 
 
-@myweb.route("/Skills")
+@app.route("/Skills")
 def Myskills():
     return render_template('Skills.html')
 
 
-@myweb.route("/Achievements")
+@app.route("/Achievements")
 def myachive():
     return render_template('Achievements.html')
 
@@ -54,12 +54,12 @@ ContactFormDetails= db.contact
 
 #creating collection for feedback
 FeedbackFormDetails= db.feedback
-@myweb.route("/Contact")
+@app.route("/Contact")
 def sample11():
     return render_template('Contact.html')
 
 
-@myweb.route("/Contact", methods=('GET','POST'))
+@app.route("/Contact", methods=('GET','POST'))
 def sample12():
     YourName= request.form.get('name')
     Email  = request.form.get('e-mail')
@@ -93,11 +93,11 @@ def sample12():
 
 
 
-@myweb.route("/Feedback")
+@app.route("/Feedback")
 def feedback():
     return render_template('Feedback.html')
 
-@myweb.route('/Feedback', methods=('GET','POST'))
+@app.route('/Feedback', methods=('GET','POST'))
 def submit_feedback():
     Name=request.form.get('name')
     EMail=request.form.get('email')
@@ -118,4 +118,4 @@ def submit_feedback():
 
 
 if __name__ == "__main__":
-    myweb.run()
+    app.run()
